@@ -44,8 +44,8 @@ if (Meteor.isServer) {
    
   ServiceConfiguration.configurations.insert({
       service: 'facebook',
-      appId: '1669053626675197',
-      secret: '5df937ac4af53e56b2d6b25712643202'
+      appId: 'your id',
+      secret: 'your secret'
   });
 
   Meteor.publish("userData", function () {
