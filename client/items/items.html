@@ -1,0 +1,20 @@
+<template name="items">
+
+    {{#if currentUser}}
+    {{currentUser.profile.name}}
+    <button id="logout" class="btn btn-default">Logout</button>
+    {{else}}
+    <button id="facebook-login" class="btn btn-default"> Login with Facebook</button>
+    {{/if}}
+
+    {{#each items}}
+        value <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <!--{{> item this}}-->
+    {{/each}}
+
+    {{#if moreResults}}
+    <button id="showMoreResults" class="btn btn-default" type="button">Loading...</button>
+    {{/if}}
+
+
+</template>
